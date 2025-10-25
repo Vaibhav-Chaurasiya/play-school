@@ -1,0 +1,38 @@
+{
+  "contact": {
+    "location": "123 Playful Lane, Kidstown, KS 12345",
+    "phone": "(123) 456-7890",
+    "email": "info@littleexplorers.com",
+    "hours": "Monday - Friday: 7:00 AM - 6:00 PM"
+  },
+  "news": [
+    {
+      "title": "Science Fair 2025",
+      "description": "Our annual science fair showcased creative experiments by our students. Congratulations to all participants!",
+      "date": "2025-10-20"
+    },
+    {
+      "title": "Sports Day Winners",
+      "description": "What a fun Sports Day! Thank you to teachers and parents for the support.",
+      "date": "2025-09-10"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1541692641319-981cc79ee10a?auto=format&fit=crop&w=1170&q=80",
+      "alt": "Children playing with blocks"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1170&q=80",
+      "alt": "Art activity"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1593078166039-c9878df5c520?auto=format&fit=crop&w=1170&q=80",
+      "alt": "Outdoor play"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1593078166039-c9878df5c520?auto=format&fit=crop&w=1170&q=80",
+      "alt": "Story time"
+    }
+  ]
+}

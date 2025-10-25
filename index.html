@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Little Explorers Play School</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-icon"><i class="fas fa-child"></i></div>
+        <div class="logo-text">Little Explorers</div>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav id="mainNav" class="nav-closed" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="container">
+      <h1>Welcome to Little Explorers Play School</h1>
+      <p>Where curious minds grow, creativity flourishes, and every child discovers the joy of learning through play.</p>
+      <div class="hero-btns">
+        <a href="#programs" class="btn">Our Programs</a>
+        <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Our Play School</h2>
+          <p>At Little Explorers, we believe that early childhood is a magical time of discovery. Our play-based curriculum is designed to nurture each child's natural curiosity and foster a lifelong love of learning.</p>
+          <p>Our experienced educators create a safe, stimulating environment where children can explore, create, and build the foundational skills they need for future success.</p>
+          <a href="#" class="btn btn-accent">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1170&q=80" alt="Children playing at our school">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Programs</h2>
+        <p>We offer age-appropriate programs designed to meet the developmental needs of every child.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-baby"></i></div>
+          <h3>Toddlers (2-3 years)</h3>
+          <p>Our toddler program focuses on sensory exploration, early social skills, and developing independence through guided play.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h3>Preschool (3-4 years)</h3>
+          <p>Preschoolers engage in more structured activities that build pre-academic skills while continuing to emphasize creative play.</p>
+        </div>
+        <div class="program-card">
+          <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Pre-K (4-5 years)</h3>
+          <p>Our Pre-K program prepares children for kindergarten with a balanced approach of play-based learning and academic readiness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News (dynamic from data.json) -->
+  <section class="news" id="news">
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest News</h2>
+        <p>Updates & announcements from Little Explorers.</p>
+      </div>
+      <div id="news-list" class="news-list">
+        <!-- News items injected here by script.js -->
+        <div class="news-loading">Loading news...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery (dynamic from data.json) -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Gallery</h2>
+        <p>Take a peek at the fun and learning happening at Little Explorers every day!</p>
+      </div>
+      <div id="galleryGrid" class="gallery-grid">
+        <!-- Gallery items injected here by script.js -->
+        <div class="gallery-loading">Loading gallery...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Parents Say</h2>
+        <p>Hear from our happy parents about their experience with Little Explorers.</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <p class="testimonial-text">"My daughter has blossomed at Little Explorers. The teachers are so caring and creative, and she comes home every day excited to tell me about what she learned."</p>
+            <p class="testimonial-author">- Krishnanand Kashyap</p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <p class="testimonial-text">"The balance of play and learning is perfect. My son has developed so much confidence and social skills since joining. I couldn't be happier with our choice."</p>
+            <p class="testimonial-author">- Elon Musk</p>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+            <p class="testimonial-text">"As an educator myself, I'm very particular about early childhood programs. Little Explorers exceeds my expectations in every way. The curriculum is thoughtful and engaging."</p>
+            <p class="testimonial-author">- Sachin Maurya</p>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to schedule a tour or ask any questions.</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><h3>Our Location</h3><p id="contact-location">123 Playful Lane, Kidstown, KS 12345</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div><h3>Phone Number</h3><p id="contact-phone">(123) 456-7890</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><h3>Email Address</h3><p id="contact-email">info@littleexplorers.com</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div><h3>Operating Hours</h3><p id="contact-hours">Monday - Friday: 7:00 AM - 6:00 PM</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="enrollment-form">
+          <div class="form-group"><label for="name">Parent's Name</label><input type="text" id="name" name="name" required></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+          <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required></div>
+          <div class="form-group">
+            <label for="child-age">Child's Age</label>
+            <select id="child-age" name="child-age" required>
+              <option value="">Select Age Group</option>
+              <option value="2-3">2-3 years (Toddlers)</option>
+              <option value="3-4">3-4 years (Preschool)</option>
+              <option value="4-5">4-5 years (Pre-K)</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea></div>
+          <button type="submit" class="btn">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Little Explorers</h3>
+          <p>Where every child's journey of discovery begins with play, curiosity, and care.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Programs</h3>
+          <ul class="footer-links">
+            <li><a href="#">Toddlers Program</a></li>
+            <li><a href="#">Preschool Program</a></li>
+            <li><a href="#">Pre-K Program</a></li>
+            <li><a href="#">Summer Camp</a></li>
+            <li><a href="#">After School Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> <span id="footer-location">123 Playful Lane, Kidstown</span></li>
+            <li><i class="fas fa-phone"></i> <span id="footer-phone">(123) 456-7890</span></li>
+            <li><i class="fas fa-envelope"></i> <span id="footer-email">info@littleexplorers.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Little Explorers Play School. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Gallery -->
+  <div class="modal" id="gallery-modal" aria-hidden="true">
+    <button class="modal-close" id="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="" style="width:100%;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
